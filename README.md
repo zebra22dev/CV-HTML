@@ -33,3 +33,6 @@ O projeto busca demonstrar conhecimentos em **desenvolvimento front-end básico*
 1. Clone o repositório:
    ```bash
    git clone https://github.com/zebra22dev/CV-HTML.git
+2. Project URL:
+   ```bash
+   https://roadmap.sh/projects/single-page-cv
