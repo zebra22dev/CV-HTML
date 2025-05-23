@@ -14,9 +14,14 @@ O projeto busca demonstrar conhecimentos em **desenvolvimento front-end básico*
 - HTML5
 - CSS3 (se aplicável)
 - Fontes Google Fonts (opcional)
-- Ícones (FontAwesome ou similares)
+- Ícones (FontAwesome ou similares, opcional)
 
 ## 📂 Estrutura do Projeto
+  
+  CV-HTML/
+  │
+  ├── CV_Henrique.html # Página principal do currículo
+  └── README.md # Documentação do projeto
 
 
 ## 👨‍💼 Funcionalidades
