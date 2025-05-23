@@ -17,7 +17,7 @@ O projeto busca demonstrar conhecimentos em **desenvolvimento front-end básico*
 - Ícones (FontAwesome ou similares, opcional)
 
 ## 📂 Estrutura do Projeto
-  ``
+  
   CV-HTML/
   │
   ├── CV_Henrique.html # Página principal do currículo
