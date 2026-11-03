@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrique Paglione · Currículo</title>
+  <meta name="description" content="Currículo de Henrique Paglione, estudante de Desenvolvimento de Sistemas na ETEC Philadelpho Gouvêa Netto.">
+  <style>
+    :root {
+      --fundo: #f6f1ea;
+      --papel: #fffdf9;
+      --texto: #2b211b;
+      --suave: #6f6259;
+      --destaque: #8a4b24;
+      --linha: #e6dbcf;
+      --chip: #f3e8dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fundo: #17120f;
+        --papel: #211a16;
+        --texto: #f1e8df;
+        --suave: #b9aa9d;
+        --destaque: #e0a46f;
+        --linha: #3a2f28;
+        --chip: #2e241e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fundo);
+      color: var(--texto);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+    }
+    main {
+      max-width: 820px;
+      margin: 32px auto;
+      padding: 48px 56px;
+      background: var(--papel);
+      border: 1px solid var(--linha);
+      border-radius: 12px;
+    }
+    header { border-bottom: 2px solid var(--destaque); padding-bottom: 20px; margin-bottom: 8px; }
+    h1 { margin: 0; font-size: 2.2rem; line-height: 1.15; letter-spacing: -0.01em; }
+    .cargo { margin: 6px 0 14px; font-size: 1.15rem; color: var(--destaque); font-weight: 600; }
+    .contato { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; padding: 0; list-style: none; color: var(--suave); }
+    a { color: var(--destaque); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--destaque);
+    }
+    p { margin: 0 0 8px; }
+    .item { margin-bottom: 16px; }
+    .item h3 { margin: 0; font-size: 1.05rem; }
+    .item .meta { color: var(--suave); font-size: .92rem; margin: 0 0 4px; }
+    .item ul { margin: 4px 0 0; padding-left: 20px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .chips li { background: var(--chip); border: 1px solid var(--linha); border-radius: 999px; padding: 2px 12px; font-size: .92rem; }
+    .grupo { margin-bottom: 10px; }
+    .grupo strong { display: block; font-size: .92rem; color: var(--suave); font-weight: 600; margin-bottom: 4px; }
+    .imprimir {
+      display: block; margin: 0 auto 32px; padding: 8px 18px;
+      font: inherit; color: var(--destaque); background: transparent;
+      border: 1px solid var(--destaque); border-radius: 999px; cursor: pointer;
+    }
+    @media (max-width: 640px) {
+      main { margin: 0; padding: 28px 16px; border: 0; border-radius: 0; }
+      h1 { font-size: 1.8rem; }
+      .contato { flex-direction: column; }
+    }
+    @media print {
+      :root { --fundo: #fff; --papel: #fff; --texto: #000; --suave: #444; --destaque: #6b3a1c; --linha: #ccc; --chip: #fff; }
+      body { font-size: 11pt; }
+      main { margin: 0; padding: 0; border: 0; max-width: none; }
+      .imprimir { display: none; }
+      .item { break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Henrique Paglione</h1>
+      <p class="cargo">Desenvolvedor Full Stack em formação</p>
+      <ul class="contato">
+        <li><a href="mailto:deborah22rex@proton.me">deborah22rex@proton.me</a></li>
+        <li><a href="https://github.com/zebra22dev">github.com/zebra22dev</a></li>
+      </ul>
+    </header>
+
+    <section>
+      <h2>Sobre</h2>
+      <p>Estudante de Desenvolvimento de Sistemas na ETEC, com projetos próprios em web, automação e mobile. Gosto de transformar problemas do dia a dia em software: um bot que acompanha promoções sozinho, um app offline para registrar receitas de café, sites para negócios locais. Busco minha primeira oportunidade como desenvolvedor (estágio ou júnior).</p>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <div class="item">
+        <h3>Técnico em Desenvolvimento de Sistemas</h3>
+        <p class="meta">ETEC Philadelpho Gouvêa Netto · em andamento</p>
+        <p>TCC em grupo: BeeWork, plataforma web para contratar prestadores de serviço.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projetos</h2>
+
+      <div class="item">
+        <h3><a href="https://github.com/zebra22dev/bot-cafe">Bot de promoções de café</a></h3>
+        <p class="meta">Python · GitHub Actions · WhatsApp e Telegram</p>
+        <ul>
+          <li>Monitora sites e canais de promoção, compara com o menor preço do mercado e avisa quando vale a pena.</li>
+          <li>Roda sozinho a cada ~10 minutos no GitHub Actions, com configuração por arquivo JSON e versões para WhatsApp e Telegram.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://github.com/zebra22dev/BeeWork">BeeWork · TCC</a></h3>
+        <p class="meta">PHP · MySQL · JavaScript · Bootstrap</p>
+        <ul>
+          <li>Plataforma para encontrar freelancers por categoria, com cadastro, login, avaliações e painel administrativo.</li>
+          <li>Fui responsável pelo código: CRUDs de usuários, categorias, serviços e avaliações e as telas.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://brewlog-sigma.vercel.app">BrewLog</a></h3>
+        <p class="meta">React · TypeScript · IndexedDB · PWA · Vercel</p>
+        <ul>
+          <li>App instalável e 100% offline para receitas de café: timer guiado por etapas, diário de preparos e estoque de grãos.</li>
+          <li>Banco local com migrações versionadas, backup em JSON e testes automatizados.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://zebra22dev.github.io/VillaDolce_Vitrine/">Villa Dolce · site vitrine</a></h3>
+        <p class="meta">HTML · CSS · JavaScript</p>
+        <ul>
+          <li>Site responsivo de uma confeitaria e café, publicado no GitHub Pages.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <div class="grupo">
+        <strong>Linguagens e front-end</strong>
+        <ul class="chips">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <strong>Back-end e dados</strong>
+        <ul class="chips">
+          <li>PHP</li><li>Python</li><li>MySQL</li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <strong>Ferramentas</strong>
+        <ul class="chips">
+          <li>Git e GitHub</li><li>GitHub Actions</li><li>Vercel</li><li>Flutter (básico)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <ul class="chips">
+        <li>Português · nativo</li><li>Inglês · avançado</li><li>Francês · básico</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Interesses</h2>
+      <p>Desenvolvimento web full stack, automação, leitura, jogos de tabuleiro e esportes.</p>
+    </section>
+  </main>
+  <button class="imprimir" type="button" onclick="window.print()">Salvar em PDF</button>
+</body>
+</html>

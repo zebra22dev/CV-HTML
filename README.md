@@ -1,43 +1,20 @@
-# CV-HTML
-It's my first CV in HTML
+# Currículo em HTML
 
-# Currículo Vitae em HTML
+Meu currículo em uma página, feito só com HTML e CSS (sem bibliotecas).
 
-## 📌 Descrição do Projeto
+**Ver online:** https://zebra22dev.github.io/CV-HTML/
 
-Este repositório contém um projeto de **Currículo Vitae (CV)** desenvolvido utilizando **HTML5**, com o objetivo de apresentar de forma estruturada e responsiva as informações profissionais, acadêmicas e técnicas de um indivíduo.
+- HTML semântico (`header`, `section`, listas)
+- Layout responsivo: funciona no celular e no computador
+- Tema escuro automático (`prefers-color-scheme`)
+- Versão para impressão: o botão "Salvar em PDF" gera um PDF limpo pelo navegador
 
-O projeto busca demonstrar conhecimentos em **desenvolvimento front-end básico**, aplicando boas práticas de marcação semântica e organização visual.
+## Como rodar
 
-## 🚀 Tecnologias Utilizadas
+Não precisa instalar nada: clone e abra o `index.html` no navegador.
 
-- HTML5
-- CSS3 (se aplicável)
-- Fontes Google Fonts (opcional)
-- Ícones (FontAwesome ou similares, opcional)
+```bash
+git clone https://github.com/zebra22dev/CV-HTML.git
+```
 
-## 📂 Estrutura do Projeto
-  
-  CV-HTML/
-  │
-  ├── CV_Henrique.html # Página principal do currículo
-  └── README.md # Documentação do projeto
-
-
-## 👨‍💼 Funcionalidades
-
-- Apresentação de dados pessoais
-- Experiência profissional
-- Formação acadêmica
-- Competências técnicas
-- Idiomas e certificações
-- Layout responsivo (caso aplicável)
-
-## 🛠️ Como Executar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/zebra22dev/CV-HTML.git
-2. Project URL:
-   ```bash
-   https://roadmap.sh/projects/single-page-cv
+Projeto inspirado no desafio [Single-Page CV do roadmap.sh](https://roadmap.sh/projects/single-page-cv).
